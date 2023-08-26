@@ -1,0 +1,16 @@
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control > div {
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <form name="formQuiz" id="form_quiz">
+        <h1>Quiz Task</h1>
+        <div class="score" id="score"></div>
+        <div class="form-control">
+            <p>1. What is the capital of the Philippines?</p>
+            <label for="num1">
+                Input: <input type="text" name="num1">
+            </label>
+            <div class="answer" id="answer-num1"></div>
+        </div>
+        <div class="form-control">
+            <p>2. What is the value of x in this question: x = 3 + 2x5.</p>
+            <label>
+                <input type="radio" name="num2" value="25"> x = 25
+            </label>
+            <label>
+                <input type="radio" name="num2" value="13"> x = 13
+            </label>
+            <label>
+                <input type="radio" name="num2" value="18"> x = 18
+            </label>
+
+            <div class="answer" id="answer-num2"></div>
+        </div>
+        <div class="form-control">
+            <p>3. Which of the following birds can fly? Choose 3 correct answers</p>
+            <label>
+                <input type="checkbox" name="checkBox1" value="Parrot"> Parrot
+            </label>
+            <label>
+                <input type="checkbox" name="checkBox2" value="Eagle"> Eagle
+            </label>
+            <label>
+                <input type="checkbox" name="checkBox3" value="Penguin"> Penguin
+            </label>
+            <label>
+                <input type="checkbox" name="checkBox4" value="Crow"> Crow
+            </label>
+            <div class="answer" id="answer-num3"></div>
+        </div>
+        <br>
+        <div class="form-control btn">
+            <button type="submit" name="submitBtn">Submit</button>
+            <button type="reset" name="resetBtn">Reset</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.main-div {
+    display: flex;
+}
+
+.main-div > div {
+    border: 1px solid black;
+}
+
+.container-div {
+    order: 2;
+    flex: 3;
+}
+
+.left-side-bar {
+    order: 1;
+    flex: 1;
+}
+.container-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px 20px 0px 20px;
+    line-height: 1.5;
+}
+
+.icon{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.section-header {
+    padding: 15px;
+}
+
+.margin {
+    margin-left: 25px;
+    line-height: 1.5;
+}
+
+.left-side-bar {
+    background-color: rgb(179, 59, 59);
+    color: white;
+}
+
+.left-side-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.dream {
+    margin: 30px 0px;
+    text-align: justify;
+}
+
+.dream span{
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px){
+    .main-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-profile-pic img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .left-side-bar {
+        order: 1;
+    }
+
+    .container-div {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
